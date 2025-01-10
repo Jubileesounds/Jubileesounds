@@ -12,12 +12,21 @@
             padding: 0;
             background-color: #f4f4f9;
             color: #333;
-            padding-top: 100px; /* Space for the top border */
-            padding-bottom: 100px; /* Space for the bottom border */
-            background-image: url('images/top.jpg'), url('images/bottom.jpg');
-            background-repeat: no-repeat, no-repeat;
-            background-position: top center, bottom center;
-            background-size: cover; /* Ensure the images cover the full width */
+        }
+
+        .top-border, .bottom-border {
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100px; /* Adjust the height as needed */
+        }
+
+        .top-border {
+            background-image: url('images/top.jpg'); /* Path to top image */
+        }
+
+        .bottom-border {
+            background-image: url('images/bottom.jpg'); /* Path to bottom image */
         }
 
         header {
@@ -74,6 +83,9 @@
 </head>
 <body>
 
+<!-- Top Border Image -->
+<div class="top-border"></div>
+
 <header>
     <h2>Jubilee Sounds</h2>
 </header>
@@ -108,6 +120,9 @@
     <p> <a href="https://jubileesounds.github.io/Jubileesounds/JubileeStory.html" style="font-size: larger; color: #2c3e50;">In the meantime, you can read the Jubilee Sounds Story and Listen to the Music by clicking on this link</a> 
     </p>
 </section>
+
+<!-- Bottom Border Image -->
+<div class="bottom-border"></div>
 
 <footer>
     <p>Pierre Goulart</p>
