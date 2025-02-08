@@ -6,76 +6,134 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JubileeSounds Intro</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Resetting some default styles for consistency */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            box-sizing: border-box;
+        }
+
+        /* Global styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f9fc;
             color: #333;
-        }
-
-        .top-border, .bottom-border {
-            background-size: cover;
-            background-repeat: no-repeat;
-            width: 100%;
-            height: 100px; /* Adjust the height as needed */
-        }
-
-        .top-border {
-            background-image: url('images/top.jpg'); /* Path to top image */
-        }
-
-        .bottom-border {
-            background-image: url('images/bottom.jpg'); /* Path to bottom image */
-        }
-
-        header {
-            text-align: center;
+            line-height: 1.6;
             padding: 20px;
+        }
+
+        a {
+            color: #007bff; /* Blue color for the links */
+            text-decoration: none; /* Remove underline by default */
+            transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
+        }
+
+        a:hover {
+            color: #0056b3; /* Darker blue on hover */
+            text-decoration: underline; /* Underline on hover */
+        }
+
+        /* Header styles */
+        header {
             background-color: #2c3e50;
-            color: white;
+            color: #fff;
+            text-align: center;
+            padding: 20px 20px; /* Reduced padding to make it shorter */
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
         }
 
         h2 {
-            font-size: 2em;
-            margin: 20px 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+
+        /* Top and bottom border styles */
+        .top-border, .bottom-border {
+            width: 100%;
+            height: 80px; /* Reduced height of the images */
+            background-size: cover;
+            background-position: center;
+            margin: 15px 0;
+        }
+
+        .top-border {
+            background-image: url('images/top.jpg');
+        }
+
+        .bottom-border {
+            background-image: url('images/bottom.jpg');
+        }
+
+        /* Main content */
+        section {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
         }
 
         p {
-            font-size: 1.2em;
-            line-height: 1.6;
-            margin: 20px;
+            font-size: 1.1em;
+            margin-bottom: 20px;
         }
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #2c3e50;
-            color: white;
-            margin-top: 40px;
+        ol {
+            padding-left: 20px;
+            margin-bottom: 30px;
         }
 
-        footer p {
-            margin: 0;
+        ol li {
+            margin-bottom: 15px;
         }
 
         #future-articles {
             background-color: #ecf0f1;
-            padding: 20px;
-            margin: 20px 0;
+            padding: 30px;
             border-radius: 8px;
         }
 
         #future-articles h3 {
             color: #2c3e50;
+            font-size: 1.8em;
+            margin-bottom: 20px;
         }
 
+        #future-articles p {
+            font-size: 1.1em;
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            padding: 15px 20px; /* Reduced padding to make it shorter */
+            background-color: #2c3e50;
+            color: #fff;
+            margin-top: 40px;
+            border-radius: 8px;
+        }
+
+        footer p {
+            font-size: 1.2em;
+        }
+
+        /* Responsive styles */
         @media (max-width: 768px) {
-            h2 {
-                font-size: 1.8em;
+            header h2 {
+                font-size: 2em;
             }
-            
-            p {
+
+            p, ol li {
+                font-size: 1em;
+            }
+
+            #future-articles p {
+                font-size: 1em;
+            }
+
+            footer p {
                 font-size: 1em;
             }
         }
@@ -109,12 +167,7 @@
 <p><strong>The purpose of this website</strong></p>
 <p>The purpose of this website is to share the revelations that emerged from this profound encounter with the Lord. Through music, reflection, and understanding, I invite you to join me on this journey of restoration and explore how modern-day Jubilees are unfolding in our time and how we can participate in them.</p>
 
-
-<p>I have published an article on Elijah List titled <a href="https://elijahlist.com/words/display_word.html?ID=32025" style="color: #2c3e50;"> Restoring the Earth to Its Original Purpose.</a> Feel free to contact me if you have any questions regarding the article.
-</p>
-
-
-
+<p>I have published an article on Elijah List titled <a href="https://elijahlist.com/words/display_word.html?ID=32025">Restoring the Earth to Its Original Purpose</a>. Feel free to contact me if you have any questions regarding the article.</p>
 
 <p>I can be reached at <a href="mailto:JubileeSounds@proton.me">JubileeSounds@proton.me</a></p>
 
@@ -124,12 +177,10 @@
 
     <p>I will be releasing an article about marriage, which will offer a description and insight into a heavenly vision of a Garden of Love. The article is scheduled for release around February 14, 2025.</p>
 
-    <p> <a href="https://jubileesounds.github.io/Jubileesounds/JubileeStory.html" style="font-size: larger; color: #2c3e50;">In the meantime, you can read the Jubilee Sounds Story and Listen to the Music by clicking on this link</a> 
-    </p>
+    <p><a href="https://jubileesounds.github.io/Jubileesounds/JubileeStory.html">In the meantime, you can read the Jubilee Sounds Story and Listen to the Music by clicking on this link</a></p>
 </section>
 
-
-
+<!-- Footer -->
 <footer>
     <p>Pierre Goulart</p>
 </footer>
