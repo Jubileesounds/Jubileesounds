@@ -24,13 +24,12 @@
 
         a {
             color: #007bff;
-            text-decoration: none;
-            transition: color 0.3s ease, text-decoration 0.3s ease;
+            text-decoration: underline; /* Ensures links are always underlined */
+            transition: color 0.3s ease;
         }
 
         a:hover {
             color: #0056b3;
-            text-decoration: underline;
         }
 
         /* Header */
@@ -73,16 +72,25 @@
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             margin-bottom: 30px;
+            text-align: center; /* Centers all text within sections */
+        }
+
+        h2 {
+            font-size: 2em;
+            text-align: center; /* Centers the titles */
+            margin-bottom: 20px; /* Adds a blank line after titles */
         }
 
         p {
             font-size: 1.1em;
             margin-bottom: 20px;
+            text-align: left; /* Ensures paragraphs remain left-aligned */
         }
 
         ol {
             padding-left: 20px;
             margin-bottom: 30px;
+            text-align: left; /* Ensures ordered lists remain left-aligned */
         }
 
         ol li {
