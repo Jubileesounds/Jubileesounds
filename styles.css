@@ -11,17 +11,14 @@ body {
     color: #333;
     line-height: 1.6;
     padding: 20px;
+    text-align: center; /* Keeps header and navigation centered */
 }
 
-/* Center specific elements */
-header, nav, footer, h1, h2, h3, title {
-    text-align: center;
-}
-
-/* Ensure paragraphs and section content are left-aligned */
-section {
+/* Override text alignment for paragraphs inside sections */
+section p {
     text-align: left;
 }
+
 
 
 /* Styling for links */
