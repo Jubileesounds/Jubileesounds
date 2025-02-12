@@ -14,7 +14,7 @@ body {
 }
 
 /* Center specific elements */
-header, nav, footer {
+header, nav, footer, h1, h2, h3, title {
     text-align: center;
 }
 
