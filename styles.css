@@ -24,8 +24,34 @@ section p {
 }
 
 /* Keep headings inside sections centered */
-section h1, section h2, section h3, section h4, section h5, section h6 {
+section h1, 
+section h2, 
+section h3, 
+section h4, 
+section h5, 
+section h6 {
     text-align: center;
+    margin: 20px 0; /* Adds spacing above and below */
+}
+
+/* Center align ordered list (numbered list) */
+ol {
+    list-style-position: inside; /* Keeps number aligned with text */
+    text-align: center;
+    padding-left: 0;
+}
+
+/* Center align unordered list (bullet points) */
+ul {
+    text-align: left; /* Bullet points usually look better left-aligned */
+    padding-left: 20px; /* Indent to separate from body text */
+}
+
+/* Center list items in ordered lists */
+ol li {
+    display: inline-block; /* Makes list items behave like inline elements */
+    text-align: center;
+    width: 100%; /* Ensures full alignment */
 }
 
 /* Styling for links */
