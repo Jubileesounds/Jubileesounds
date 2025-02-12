@@ -25,6 +25,18 @@ section p {
     margin-bottom: 20px; /* Adjust spacing as needed */
 }
 
+/* Styling for links in the section */
+.highlighted-link {
+    color: #007bff;
+    font-size: 1.2em;  /* Increases the font size for better readability */
+    text-decoration: underline;  /* Underlines the link */
+    transition: color 0.3s ease;
+}
+
+.highlighted-link:hover {
+    color: #0056b3;  /* Darkens the link color on hover */
+}
+
 
 /* Keep headings centered with more spacing */
 section h1, 
