@@ -19,9 +19,12 @@ header, nav {
 }
 
 /* Override text alignment for paragraphs inside sections */
+/* Extra spacing after paragraphs */
 section p {
     text-align: left;
+    margin-bottom: 20px; /* Adjust spacing as needed */
 }
+
 
 /* Keep headings centered with more spacing */
 section h1, 
