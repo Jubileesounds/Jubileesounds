@@ -151,7 +151,9 @@ footer {
     margin-top: 40px;
     text-align: center;
 }
-
+.thank-you-title {
+    text-align: center;
+}
 /* Responsive styles */
 @media (max-width: 768px) {
     h1 {
