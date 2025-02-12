@@ -11,7 +11,11 @@ body {
     color: #333;
     line-height: 1.6;
     padding: 20px;
-    text-align: center; /* Keeps header and navigation centered */
+}
+
+/* Center only header and nav */
+header, nav {
+    text-align: center;
 }
 
 /* Override text alignment for paragraphs inside sections */
@@ -23,9 +27,6 @@ section p {
 section h1, section h2, section h3, section h4, section h5, section h6 {
     text-align: center;
 }
-
-
-
 
 /* Styling for links */
 a {
@@ -115,6 +116,7 @@ footer {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-top: 40px;
+    text-align: center;
 }
 
 /* Responsive styles */
