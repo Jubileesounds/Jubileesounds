@@ -34,22 +34,33 @@ section h6 {
     margin: 30px 0; /* Increased spacing for better readability */
 }
 
-/* Center numbered list (ordered list) */
+/* Ensure ordered lists are centered */
 ol {
-    list-style-position: inside; /* Keeps numbers aligned with text */
-    padding-left: 0;
+    list-style: none; /* Remove default numbering */
+    padding-left: 0; /* Remove default indent */
     text-align: center;
+    counter-reset: list-counter; /* Initialize counter */
 }
 
-/* Center align both the number and text in ordered lists */
+/* Center both number and text */
 ol li {
-    display: flex;         /* Enables flexbox */
-    justify-content: center; /* Centers both number and text */
-    align-items: center;    /* Aligns text properly */
+    counter-increment: list-counter; /* Increase counter */
+    display: flex;
+    justify-content: center; /* Center the text */
+    align-items: center;
     text-align: center;
     width: 100%;
-    margin: 10px 0; /* Adds space between list items */
+    margin: 10px 0;
+    position: relative;
 }
+
+/* Add custom numbers */
+ol li::before {
+    content: counter(list-counter) ". ";
+    font-weight: bold;
+    margin-right: 8px;
+}
+
 
 /* Unordered list stays left-aligned */
 ul {
