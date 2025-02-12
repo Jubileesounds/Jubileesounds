@@ -13,7 +13,7 @@ body {
     padding: 20px;
 }
 
-/* Center only header and nav */
+/* Center header and nav */
 header, nav {
     text-align: center;
 }
@@ -23,7 +23,7 @@ section p {
     text-align: left;
 }
 
-/* Keep headings inside sections centered */
+/* Keep headings centered with more spacing */
 section h1, 
 section h2, 
 section h3, 
@@ -31,27 +31,30 @@ section h4,
 section h5, 
 section h6 {
     text-align: center;
-    margin: 20px 0; /* Adds spacing above and below */
+    margin: 30px 0; /* Increased spacing for better readability */
 }
 
-/* Center align ordered list (numbered list) */
+/* Center numbered list (ordered list) */
 ol {
-    list-style-position: inside; /* Keeps number aligned with text */
-    text-align: center;
+    list-style-position: inside; /* Keeps numbers aligned with text */
     padding-left: 0;
-}
-
-/* Center align unordered list (bullet points) */
-ul {
-    text-align: left; /* Bullet points usually look better left-aligned */
-    padding-left: 20px; /* Indent to separate from body text */
-}
-
-/* Center list items in ordered lists */
-ol li {
-    display: inline-block; /* Makes list items behave like inline elements */
     text-align: center;
-    width: 100%; /* Ensures full alignment */
+}
+
+/* Center align both the number and text in ordered lists */
+ol li {
+    display: flex;         /* Enables flexbox */
+    justify-content: center; /* Centers both number and text */
+    align-items: center;    /* Aligns text properly */
+    text-align: center;
+    width: 100%;
+    margin: 10px 0; /* Adds space between list items */
+}
+
+/* Unordered list stays left-aligned */
+ul {
+    text-align: left;
+    padding-left: 20px;
 }
 
 /* Styling for links */
@@ -128,10 +131,10 @@ nav a:hover {
 /* Section styles */
 section {
     background-color: #fff;
-    padding: 40px;
+    padding: 50px; /* Increased padding */
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
+    margin-bottom: 40px; /* Increased margin */
 }
 
 /* Footer styles */
