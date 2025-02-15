@@ -177,6 +177,47 @@ footer {
 
 /* Responsive styles */
 @media (max-width: 768px) {
+    /* Adjusting font size for headings on smaller screens */
+    h1 {
+        font-size: 2em;
+    }
+
+    /* Make navigation links more mobile-friendly */
+    nav a {
+        display: inline-block;
+        margin: 5px;
+        font-size: 1.2em; /* Adjust font size for better readability */
+    }
+
+    /* Adjust menu container for better layout */
+    .menu {
+        padding: 10px;  /* Add padding for better spacing */
+        text-align: center;  /* Center-align items */
+    }
+
+    /* If you have a mobile menu, adjust its appearance */
+    .menu-item {
+        font-size: 1.5em; /* Increase font size for readability */
+        padding: 15px;    /* More padding around each item */
+    }
+
+    /* Optional: Adjust the layout to a stacked style (if needed) */
+    nav {
+        display: block; /* Stacks items vertically */
+    }
+
+    /* Optional: Hamburger menu style (if you have one) */
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 2em;  /* Make the hamburger icon large enough to tap */
+    }
+}
+
+
+
+/* Responsive styles 
+@media (max-width: 768px) {
     h1 {
         font-size: 2em;
     }
@@ -186,3 +227,4 @@ footer {
         margin: 5px;
     }
 }
+*/
